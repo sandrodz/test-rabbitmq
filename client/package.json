@@ -1,0 +1,39 @@
+{
+  "name": "rabbit-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-create-task": "ts-node-dev --exit-child src/createTask.ts",
+    "dev-receive-task": "ts-node-dev --exit-child src/receiveTask.ts",
+    "dev-create-tasks": "ts-node-dev --exit-child src/createTasks.ts",
+    "dev-receive-tasks": "ts-node-dev --exit-child src/receiveTasks.ts",
+    "create-task": "ts-node src/createTask.ts",
+    "receive-task": "ts-node src/receiveTask.ts",
+    "create-tasks": "ts-node src/createTasks.ts",
+    "receive-tasks": "ts-node src/receiveTasks.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/amqplib": "^0.10.1",
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.0.3",
+    "yesno": "^0.4.0"
+  }
+}
