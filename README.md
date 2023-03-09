@@ -36,9 +36,16 @@ cd client && npm i
 cp .env.example .env
 vi .env
 ```
+You should run create / receive in different terminal panes so you can see how push mechanism works.
+
 To run simple tasks queue:
 ```
 npm run create-task hello
-npm run receive-tasks
+npm run receive-task
 ```
-You should run create / receive in different terminal panes so you can see how push mechanism works.
+To run queue in FANOUT mode:
+```
+npm run create-tasks hello
+npm run receive-tasks taskq1
+npm run receive-tasks taskq2
+```
