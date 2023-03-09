@@ -1,4 +1,4 @@
-# Notes
+# Getting started
 
 Start container:
 ```
@@ -38,12 +38,14 @@ vi .env
 ```
 You should run create / receive in different terminal panes so you can see how push mechanism works.
 
-To run simple tasks queue:
+### Simple tasks queue
+[![asciicast](https://asciinema.org/a/566071.svg)](https://asciinema.org/a/566071)
 ```
 npm run create-task hello
 npm run receive-task
 ```
-To run queue in FANOUT mode:
+### FANOUT mode
+[![asciicast](https://asciinema.org/a/566077.svg)](https://asciinema.org/a/566077)
 ```
 npm run create-tasks hello
 npm run receive-tasks taskq1
