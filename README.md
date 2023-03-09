@@ -51,3 +51,4 @@ npm run create-tasks hello
 npm run receive-tasks taskq1
 npm run receive-tasks taskq2
 ```
+Note that nacked messages are requeued.

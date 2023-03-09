@@ -39,7 +39,11 @@ dotenv.config();
             channel.ack(message);
             console.log(" [✔️] Acked '%s'", message.content.toString());
           } else {
-            channel.nack(message, false, false);
+            // Third parameter true means that the message will be requeued.
+            // If its set false message is discarded or dead-lettered.
+            // When a message is requeued, it will be placed to its original position in its queue, if possible.
+            // If not the message will be requeued to a position closer to queue head
+            channel.nack(message, false, true);
             console.log(" [❌] Nacked '%s'", message.content.toString());
           }
         }
