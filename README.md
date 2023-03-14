@@ -2,6 +2,7 @@
 
 Start container:
 ```
+cp .env.example .env
 dokcer-compose up
 ```
 Add custom domain in /etc/hosts
@@ -45,6 +46,8 @@ npm run create-task hello
 npm run receive-task
 ```
 ### FANOUT mode
+![rabbitmq-fanout](https://user-images.githubusercontent.com/8479569/225120469-a24df614-80d1-4a04-a6b1-0a633a608014.png)
+
 [![asciicast](https://asciinema.org/a/566077.svg)](https://asciinema.org/a/566077)
 ```
 npm run create-tasks hello
